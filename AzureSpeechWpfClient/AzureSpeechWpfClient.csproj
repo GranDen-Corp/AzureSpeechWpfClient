@@ -48,4 +48,10 @@
     </Resource>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="AdaptiveCardsHostConfig.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

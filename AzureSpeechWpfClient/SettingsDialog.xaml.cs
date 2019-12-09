@@ -1,17 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using AzureSpeechWpfClient.Settings;
 using Microsoft.Win32;
 
@@ -210,12 +202,12 @@ namespace AzureSpeechWpfClient
                 var fileInfo = new FileInfo(this.WakeWordPathTextBox.Text);
                 openDialog.InitialDirectory = fileInfo.DirectoryName;
             }
-#pragma warning disable CA1031 // Do not catch general exception types
             catch (Exception ex)
             {
                 Debug.WriteLine($"Bad path for initial directory: {ex.Message}");
+                MessageBox.Show("Load wake word file failed", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-#pragma warning restore CA1031 // Do not catch general exception types
 
             bool? result = openDialog.ShowDialog();
 
