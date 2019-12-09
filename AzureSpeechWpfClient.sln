@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSpeechWpfClient", "AzureSpeechWpfClient\AzureSpeechWpfClient.csproj", "{8BAD9EB6-00B5-4EE6-8E89-0E96EAE0792E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonViewerControl", "JsonViewerControl\JsonViewerControl.csproj", "{7E755156-2FC2-4148-A938-AD91567AEDEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BAD9EB6-00B5-4EE6-8E89-0E96EAE0792E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BAD9EB6-00B5-4EE6-8E89-0E96EAE0792E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BAD9EB6-00B5-4EE6-8E89-0E96EAE0792E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BAD9EB6-00B5-4EE6-8E89-0E96EAE0792E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E755156-2FC2-4148-A938-AD91567AEDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E755156-2FC2-4148-A938-AD91567AEDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E755156-2FC2-4148-A938-AD91567AEDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E755156-2FC2-4148-A938-AD91567AEDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5B66AF2-429E-4516-9EFA-9A7BB178E447}
+	EndGlobalSection
+EndGlobal
