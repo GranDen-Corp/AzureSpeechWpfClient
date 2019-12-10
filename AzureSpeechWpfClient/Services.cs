@@ -14,7 +14,6 @@ namespace AzureSpeechWpfClient
                 .Properties(w => new {w.Top, w.Width, w.Height, w.Left, w.WindowState})
                 .PersistOn(nameof(Window.Closing))
                 .StopTrackingOn(nameof(Window.Closing));
-
         }
     }
 }

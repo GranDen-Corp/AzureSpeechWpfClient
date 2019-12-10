@@ -30,7 +30,7 @@ namespace AzureSpeechWpfClient
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
-        private AppSettings settings = new AppSettings();
+        private readonly AppSettings settings = new AppSettings();
         private DialogServiceConnector connector = null;
         private WaveOutEvent player = new WaveOutEvent();
         private Queue<WavQueueEntry> playbackStreams = new Queue<WavQueueEntry>();
@@ -52,7 +52,7 @@ namespace AzureSpeechWpfClient
             this.ActivityPayloadPane.CommandBindings.Add(cb);
             this.DataContext = this;
             this.player.PlaybackStopped += this.Player_PlaybackStopped;
-            Services.Tracker.Track(this.settings);
+            Services.Tracker.Track(settings);
             Services.Tracker.Track(this);
 
             this.renderer = new AdaptiveCardRenderer();
