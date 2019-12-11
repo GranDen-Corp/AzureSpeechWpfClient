@@ -255,6 +255,8 @@ namespace AzureSpeechWpfClient
                 config.SetProxy(this.settings.RuntimeSettings.ProxyHostName, proxyPortNumber, string.Empty, string.Empty);
             }
 
+            config.SetProperty("ProfanityFilterMode", "None");
+
             // If a the DialogServiceConnector object already exists, destroy it first
             if (this.connector != null)
             {
